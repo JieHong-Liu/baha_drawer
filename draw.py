@@ -1,9 +1,10 @@
 import random
 
-first = int(input("from:"))
-second = int(input("to:"))
-how_many = int(input("how many:"))
 random.seed()
+first = int(input("From:"))
+second = int(input("TO:"))
+how_many = int(input("How Many:"))
 
 x = random.sample(range(first, second+1), how_many)
+x.sort()
 print(x)
